@@ -24,7 +24,7 @@ body {
   width: 300px;
 }
 .main-wrapper:hover {
-  box-shadow: 7px 7px black;
+  box-shadow: 7px 7px hsl(0, 0%, 7%);
 }
 
 .hero__img {

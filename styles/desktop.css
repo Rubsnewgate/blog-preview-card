@@ -30,11 +30,11 @@ body {
   background-color: hsl(0, 0%, 100%);
   border: 2px solid hsl(0, 0%, 7%);
   border-radius: 20px;
-  box-shadow: 5px 5px black;
+  box-shadow: 5px 5px hsl(0, 0%, 7%);
   transition: box-shadow 500ms;
 }
 .main-wrapper:hover {
-  box-shadow: 10px 10px black;
+  box-shadow: 10px 10px hsl(0, 0%, 7%);
   cursor: pointer;
 }
 

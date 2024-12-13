@@ -1,0 +1,59 @@
+@use './guide.sass'
+
+// Main Container
+.main-wrapper
+	display: grid
+	grid-template-rows: 1fr 1.5fr
+	padding: 20px
+	width: 380px
+	height: auto
+	font-family: guide.$primary-font
+	background-color: guide.$white
+	border: 2px solid guide.$black
+	border-radius: 20px
+	box-shadow: 5px 5px guide.$black
+	transition: box-shadow 500ms
+	&:hover
+		box-shadow: 10px 10px guide.$black
+		cursor: pointer
+
+// Card Hero Section
+.hero__img
+	border-radius: 10px
+
+// Card Info Section
+.info
+	margin-top: 10px
+
+.info__date-type
+	width: 74px
+	padding: 4px
+	font-size: guide.$sm-size
+	font-weight: guide.$x-bold
+	background-color: guide.$yellow
+	border-radius: 5px
+	p
+		margin: 0
+
+.info__publish-day
+	font-size: guide.$sm-size
+	font-weight: guide.$bold
+
+.info__text-title
+	font-size: guide.$lg-size
+	transition: color 600ms
+	&:hover
+		color: guide.$yellow
+		cursor: pointer
+
+.info__text-content
+	font-size: guide.$sm-size
+	color: guide.$grey
+
+.user
+	@include guide.flexbox(row, start, center, 20px)
+	margin-top: 25px
+
+.user-name
+	font-size: guide.$sm-size
+	font-weight: guide.$x-bold
